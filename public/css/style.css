@@ -1,0 +1,143 @@
+body{
+  font-family: "Plus Jakarta Sans", serif !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
+  
+}
+.coniner{
+    flex: 1 !important;
+}
+
+h3{
+    margin-left: 13rem;
+}
+
+.navbar{
+    background-color: #fff;
+    
+    
+}
+.fa-compass{
+    color:#fe424d;
+}
+.nav-link{
+    color:#222222 !important;
+}
+
+
+/* footer*/
+
+.f-info{
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:#ebebeb;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+
+}
+
+.f-info-socials ,.f-info-links ,.f-info-bran{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i{
+    margin-right: 1.2rem;
+    font-size: 1.2rem;
+}
+
+/* CARD  */
+.card-listing{
+    border: none !important;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 17rem !important;
+}
+
+.card-body{
+    padding:0 !important;
+    
+}
+
+.card-text p{
+    font-weight: 400 !important;
+    margin: 0 !important;
+}
+
+.index{
+    margin:0.7rem !important;
+    margin-top: 0rem !important;
+
+}
+.a {
+    text-decoration: none;
+    
+    width: 17rem !important;
+    margin: 1rem !important;
+    
+}
+
+ /* card effect */
+
+ .card-img-overlay{
+    opacity: 0;
+ }
+ .card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+ }
+
+ /* new page*/
+ .add-btn{
+    background-color:#fe424d !important;
+    border: none !important;
+ }
+
+ /* edit page */
+ .edit-btn{
+    background-color:#fe424d !important;
+    border: none !important;
+ }
+
+/* show page */
+
+.show-img{
+    width: 33rem !important;
+    height: 40vh !important;
+}
+
+.dlt{
+    background-color:#fe424d !important;
+    border: none !important;
+    color:white !important;
+
+}
+.edt{
+    background-color:#000000!important;
+    border: none !important;
+    color:white !important;
+    
+}
+
+/* map */
+#map {
+     height: 400px;
+     width: 400px;
+    }
