@@ -1,9 +1,10 @@
 <% layout("/layouts/boilerplate") %>
 <body>
-    <h3>Edit Listing</h3>
-    <div class="row">
-        <div class="col-8 offset-2">
-            <form method="post" action="/listings/<%=listing._id%>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data"> 
+    <h3 class="edit_title">Edit Listing</h3>
+    <div class="row ">
+        
+        <div class="col-8 offset-2 ">
+            <form method="post" action="/listings/<%=listing._id%>?_method=PUT" novalidate class="needs-validation edit_listing" enctype="multipart/form-data" > 
 
                 <div class="mb-2">
                     <label for="title" class="form-label">Title</label>

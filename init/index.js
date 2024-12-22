@@ -23,8 +23,7 @@ async function main(){
 }
 
 async function initDB (){
-    
-    upload.single('listing[image]');
+
     list=await new Listing({sampleListings});
     let cordinate=await geocodingClient.forwardGeocode({
         query: sampleListings.location,

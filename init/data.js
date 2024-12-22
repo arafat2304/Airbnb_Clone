@@ -13,7 +13,7 @@ const sampleListings = [{
   
   {
     title: "Mountain Retreat Hotel",
-    description: "A cozy hotel located in the serene mountains, perfect for a peaceful getaway.",
+    description: ".A cozy hotel located in the serene mountains, perfect for a peaceful getaway",
     image: {
       url:"https://i.pinimg.com/originals/36/bf/f1/36bff1733396b6a985121a0f83524fd2.jpg",
       filename:"sampleListing"
