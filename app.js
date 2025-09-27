@@ -20,21 +20,21 @@ const localStrategy=require("passport-local");
 const user = require("./module/user.js");
 const { error } = require('console');
 
-dbURL=process.env.ATLASDB_URL;
+// dbURL=process.env.ATLASDB_URL;
 
-const store=MongoStore.create({
-    mongoUrl:dbURL,
-    crypto: {
-        secret:process.env.SECRET_CODE,
-      },
-      touchAfter:24*3600,
-})
+// const store=MongoStore.create({
+//     mongoUrl:dbURL,
+//     crypto: {
+//         secret:process.env.SECRET_CODE,
+//       },
+//       touchAfter:24*3600,
+// })
 
-store.on(error,()=>{
-    console.log("error in mongoAtlas",error);
-})
+// store.on(error,()=>{
+//     console.log("error in mongoAtlas",error);
+// })
 const sessionOption={
-    store,
+    // store,
     secret:process.env.SECRET_CODE,
     resave:false,
     saveUninitialized:true,
@@ -60,7 +60,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 // app.use(express.json());
 
-// const MONGO_URL="mongodb://127.0.0.1:27017/wonderlust";
+const MONGO_URL="mongodb://127.0.0.1:27017/wonderlust";
 
 
 main()
@@ -71,7 +71,7 @@ main()
     console.log(err);
 })
 async function main(){
-    mongoose.connect(dbURL);
+    mongoose.connect(MONGO_URL);
 }
 
 app.listen(8080,(req,res)=>{
